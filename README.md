@@ -109,7 +109,7 @@ CocoaPods is needed for FLutter integration.
 In Projucer, some iOS export settings had to be configured:
 - To make it work with CocoaPods (as found in adamski's thread in the [JUCE forum](https://forum.juce.com/t/solved-cocoapods-and-introjucer-generated-projects-linker-error-react-native/16426)), for all build target configuations (Release/Debug), set Binary Location:
   ```
-  $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+  /$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
   ```
 - Custom PList
     ```
